@@ -1,5 +1,8 @@
 # FlowMind AI — Autonomous Workflow Automation SaaS
 
+![FlowMind AI SaaS Site Preview](./preview.jpg)
+
+
 > **Turn English into Automated Workflows.**  
 > Describe your logic in natural language. FlowMind automatically synthesizes, validates, and deploys high-throughput API integrations, webhooks, and AI agents with zero glue code.
 
