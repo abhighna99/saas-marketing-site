@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowMind AI — Turn English into Automated Workflows</title>
+  <meta name="description" content="AI-powered workflow automation SaaS that turns plain English into enterprise-grade automated pipelines in seconds.">
+  
+  <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Animated Background Glowing Orbs -->
+  <div class="ambient-glow">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- 1. NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="FlowMind AI Home">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+            <path d="M10 16C10 12.6863 12.6863 10 16 10C19.3137 10 22 12.6863 22 16C22 19.3137 19.3137 22 16 22" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="16" cy="16" r="3" fill="#a855f7"/>
+            <path d="M8 20L11 23L14 20" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7c3aed"/>
+                <stop offset="1" stop-color="#3b82f6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">Flow<span class="gradient-text">Mind</span></span>
+        <span class="version-tag">AI 2.4</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#docs" class="nav-link">Docs</a>
+        <a href="#blog" class="nav-link">Blog</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-ghost login-btn">Sign In</a>
+        <a href="#cta-banner" class="btn btn-primary glow-btn">
+          <span>Get Early Access</span>
+          <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-badge reveal-item">
+          <span class="pulse-dot"></span>
+          <span class="badge-text">Next-Gen Autonomous Workflow Engine</span>
+          <span class="badge-pill">New v2.4 Release</span>
+        </div>
+
+        <h1 class="hero-title reveal-item">
+          Turn English into <br>
+          <span class="gradient-text glow-text">Automation.</span>
+        </h1>
+
+        <p class="hero-subtitle reveal-item">
+          Describe any complex pipeline in natural language. FlowMind instantly generates, validates, and deploys high-throughput API integrations, webhooks, and AI agents with zero glue code.
+        </p>
+
+        <div class="hero-cta-group reveal-item">
+          <a href="#cta-banner" class="btn btn-primary btn-lg glow-btn">
+            <span>Start Free Trial</span>
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+              <path d="M4.16669 10H15.8334M15.8334 10L10.8334 5M15.8334 10L10.8334 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#mock-browser" class="btn btn-glass btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5V19L19 12L8 5Z"/>
+            </svg>
+            <span>Live Interactive Canvas</span>
+          </a>
+        </div>
+
+        <div class="hero-trust-badges reveal-item">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>No credit card required</span>
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>14-day full feature trial</span>
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>SOC2 Type II Certified</span>
+          </div>
+        </div>
+
+        <!-- HERO MOCK BROWSER WINDOW (Pure CSS UI Dashboard) -->
+        <div class="mock-browser-wrapper reveal-item" id="mock-browser">
+          <div class="mock-browser-window">
+            
+            <!-- Window Topbar -->
+            <div class="browser-topbar">
+              <div class="window-controls">
+                <span class="control-dot close"></span>
+                <span class="control-dot minimize"></span>
+                <span class="control-dot expand"></span>
+              </div>
+              <div class="browser-url-bar">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span class="url-text">app.flowmind.ai/workspace/revenue-pipeline-v3</span>
+                <span class="badge-status-live">● Active 99.99%</span>
+              </div>
+              <div class="window-actions">
+                <span class="action-tag">Production</span>
+                <span class="btn-micro">Run Test</span>
+              </div>
+            </div>
+
+            <!-- Dashboard Content Container -->
+            <div class="browser-body">
+              
+              <!-- AI Natural Language Prompt Input Bar -->
+              <div class="prompt-engine-bar">
+                <div class="prompt-input-wrapper">
+                  <div class="ai-spark-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="url(#sparkle-grad)"/>
+                      <defs>
+                        <linearGradient id="sparkle-grad" x1="2" y1="2" x2="22" y2="22">
+                          <stop stop-color="#38bdf8"/>
+                          <stop offset="1" stop-color="#c084fc"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="prompt-input-text" id="interactivePrompt">
+                    <span class="typing-text">"When a Stripe signup occurs, query Clearbit for company size, summarize churn risk with Gemini, and notify #sales-vip on Slack"</span>
+                  </div>
+                  <button class="synthesize-btn" id="synthesizeBtn" title="Synthesize Pipeline">
+                    <span>Synthesize</span>
+                    <span class="kbd">⌘K</span>
+                  </button>
+                </div>
+
+                <!-- Quick Prompt Presets to Click -->
+                <div class="prompt-presets">
+                  <span class="preset-label">Sample Presets:</span>
+                  <button class="preset-pill active" data-preset="sales">⚡ Sales VIP Routing</button>
+                  <button class="preset-pill" data-preset="support">🎧 Support Ticket Triager</button>
+                  <button class="preset-pill" data-preset="devops">🚀 GitHub Deploy Guardrail</button>
+                </div>
+              </div>
+
+              <!-- Visual Flow Graph / Canvas Simulation -->
+              <div class="canvas-viewport">
+                
+                <!-- Pipeline Nodes Row -->
+                <div class="flow-canvas" id="flowCanvas">
+                  
+                  <!-- Node 1: Trigger -->
+                  <div class="flow-node node-trigger active-pulse">
+                    <div class="node-header">
+                      <span class="node-type">TRIGGER</span>
+                      <span class="node-status green">Live Hook</span>
+                    </div>
+                    <div class="node-main">
+                      <div class="node-icon stripe-icon">S</div>
+                      <div class="node-info">
+                        <h4>Stripe Billing</h4>
+                        <p>customer.created</p>
+                      </div>
+                    </div>
+                    <div class="node-meta">
+                      <span>Rate: 142 req/min</span>
+                      <span class="code-badge">200 OK</span>
+                    </div>
+                  </div>
+
+                  <!-- Connector 1 -->
+                  <div class="flow-connector">
+                    <div class="connector-line">
+                      <div class="signal-particle"></div>
+                    </div>
+                  </div>
+
+                  <!-- Node 2: AI Processor -->
+                  <div class="flow-node node-ai highlight-glow">
+                    <div class="node-header">
+                      <span class="node-type">NEURAL AGENT</span>
+                      <span class="node-status purple">Gemini 2.5 Pro</span>
+                    </div>
+                    <div class="node-main">
+                      <div class="node-icon ai-node-icon">✨</div>
+                      <div class="node-info">
+                        <h4>Lead Enrich & Score</h4>
+                        <p>Analyze ARR & Sector</p>
+                      </div>
+                    </div>
+                    <div class="node-meta">
+                      <span>Inference: 148ms</span>
+                      <span class="score-badge">Tier A ($50k+)</span>
+                    </div>
+                  </div>
+
+                  <!-- Connector 2 (Branching visual) -->
+                  <div class="flow-connector">
+                    <div class="connector-line">
+                      <div class="signal-particle delay-1"></div>
+                    </div>
+                  </div>
+
+                  <!-- Node 3: Condition / Route -->
+                  <div class="flow-node node-action">
+                    <div class="node-header">
+                      <span class="node-type">ACTION ROUTE</span>
+                      <span class="node-status blue">Multi-channel</span>
+                    </div>
+                    <div class="node-main">
+                      <div class="node-icon slack-icon">#</div>
+                      <div class="node-info">
+                        <h4>Slack & HubSpot</h4>
+                        <p>#sales-vip + Deal Created</p>
+                      </div>
+                    </div>
+                    <div class="node-meta">
+                      <span>Sent instantly</span>
+                      <span class="code-badge">Executed</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Canvas Bottom Analytics Bar -->
+                <div class="canvas-telemetry">
+                  <div class="telemetry-stat">
+                    <span class="stat-label">Total Executions</span>
+                    <span class="stat-val gradient-text">1,482,910</span>
+                  </div>
+                  <div class="telemetry-stat">
+                    <span class="stat-label">Avg Latency</span>
+                    <span class="stat-val">312ms</span>
+                  </div>
+                  <div class="telemetry-stat">
+                    <span class="stat-label">Auto-Healing Fixes</span>
+                    <span class="stat-val accent-cyan">429 Resolved</span>
+                  </div>
+                  <div class="telemetry-stat">
+                    <span class="stat-label">Cloud Cost Saved</span>
+                    <span class="stat-val accent-green">$14,800/mo</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. LOGOS BAR -->
+    <section class="logos-section">
+      <div class="container">
+        <p class="logos-title">TRUSTED BY 2,500+ ENGINEERING & AUTOMATION TEAMS WORLDWIDE</p>
+        <div class="logos-grid">
+          <div class="company-logo">
+            <span class="logo-symbol">❖</span>
+            <span class="logo-name">SYNTHEX</span>
+          </div>
+          <div class="company-logo">
+            <span class="logo-symbol">⬡</span>
+            <span class="logo-name">NEXUSDOCK</span>
+          </div>
+          <div class="company-logo">
+            <span class="logo-symbol">▲</span>
+            <span class="logo-name">VELOX DATA</span>
+          </div>
+          <div class="company-logo">
+            <span class="logo-symbol">◈</span>
+            <span class="logo-name">HYPERION</span>
+          </div>
+          <div class="company-logo">
+            <span class="logo-symbol">✦</span>
+            <span class="logo-name">AURA LABS</span>
+          </div>
+          <div class="company-logo">
+            <span class="logo-symbol">◎</span>
+            <span class="logo-name">CLOUDSPHERE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURES SECTION -->
+    <section class="features-section" id="features">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">ENGINEERED FOR MODERN SCALE</span>
+          <h2 class="section-title">Automate the impossible without writing fragile scripts.</h2>
+          <p class="section-desc">
+            Traditional workflow builders break when payloads change or APIs throttle. FlowMind embeds autonomous intelligence into every node so your operations run 24/7 without babysitting.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- Feature 1 -->
+          <div class="feature-card glass-card reveal-item">
+            <div class="feature-icon-wrapper">
+              <span class="feature-emoji">💬</span>
+            </div>
+            <h3 class="feature-title">Natural Language Architecture</h3>
+            <p class="feature-desc">
+              Describe multi-step pipelines in simple words. FlowMind compiles plain English into verified directed acyclic graphs (DAGs) with type validations and conditional guards.
+            </p>
+            <div class="feature-badge">Zero Code Syntax</div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card glass-card reveal-item">
+            <div class="feature-icon-wrapper">
+              <span class="feature-emoji">⚡</span>
+            </div>
+            <h3 class="feature-title">300+ Pre-Built Connectors</h3>
+            <p class="feature-desc">
+              Native bindings for HubSpot, Salesforce, Stripe, PostgreSQL, Snowflake, GitHub, Slack, Linear, and any custom OpenAPI / REST / GraphQL endpoints out of the box.
+            </p>
+            <div class="feature-badge">Instant Auth & OAuth</div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card glass-card reveal-item">
+            <div class="feature-icon-wrapper">
+              <span class="feature-emoji">🛡️</span>
+            </div>
+            <h3 class="feature-title">Autonomous Self-Healing</h3>
+            <p class="feature-desc">
+              When third-party payloads change or APIs throw 500 errors, FlowMind's diagnostic model rewrites payload shapes and retries failed transactions with zero downtime.
+            </p>
+            <div class="feature-badge">99.99% Execution Rate</div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card glass-card reveal-item">
+            <div class="feature-icon-wrapper">
+              <span class="feature-emoji">🔒</span>
+            </div>
+            <h3 class="feature-title">Zero-Trust Enterprise Security</h3>
+            <p class="feature-desc">
+              Field-level payload encryption, customer-managed encryption keys (CMEK), role-based access control, automated secret masking, and immutable audit logs.
+            </p>
+            <div class="feature-badge">SOC2 & HIPAA Ready</div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card glass-card reveal-item">
+            <div class="feature-icon-wrapper">
+              <span class="feature-emoji">📊</span>
+            </div>
+            <h3 class="feature-title">Distributed Observability</h3>
+            <p class="feature-desc">
+              Sub-millisecond trace timelines for every single transaction. Debug every payload transformation, inspect JSON state at any step, and replay historical runs with one click.
+            </p>
+            <div class="feature-badge">OpenTelemetry Native</div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card glass-card reveal-item">
+            <div class="feature-icon-wrapper">
+              <span class="feature-emoji">🤝</span>
+            </div>
+            <h3 class="feature-title">Human-in-the-Loop Safeguards</h3>
+            <p class="feature-desc">
+              Require instant Slack or email approvals for sensitive actions like high-value refunds, contract executions, or destructive database mutations before they proceed.
+            </p>
+            <div class="feature-badge">One-Click Approvals</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. HOW IT WORKS SECTION -->
+    <section class="how-it-works-section" id="how-it-works">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">STREAMLINED 3-STEP PIPELINE</span>
+          <h2 class="section-title">From thought to production in under 60 seconds.</h2>
+          <p class="section-desc">
+            No complex drag-and-drop spaghetti nodes or brittle Python scripts. Here is how FlowMind accelerates workflow velocity by 10x.
+          </p>
+        </div>
+
+        <div class="steps-flow-container">
+          <div class="steps-connector-bar"></div>
+
+          <!-- Step 1 -->
+          <div class="step-card glass-card reveal-item">
+            <div class="step-number-bubble">
+              <span>01</span>
+            </div>
+            <div class="step-content">
+              <div class="step-meta">INPUT</div>
+              <h3 class="step-title">Prompt Your Logic</h3>
+              <p class="step-desc">
+                Simply type what triggers the workflow, which services are involved, what conditions apply, and what output actions you need.
+              </p>
+              <div class="step-code-preview">
+                <code>"On new GitHub issue labeled 'bug', triage severity with AI, assign to on-call engineer, and alert PagerDuty if critical."</code>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card glass-card reveal-item">
+            <div class="step-number-bubble">
+              <span>02</span>
+            </div>
+            <div class="step-content">
+              <div class="step-meta">SYNTHESIS</div>
+              <h3 class="step-title">AI Generates & Verifies</h3>
+              <p class="step-desc">
+                FlowMind parses dependencies, binds secure credentials, compiles type-safe schemas, and runs synthetic test inputs through a sandboxed runner.
+              </p>
+              <div class="step-code-preview">
+                <span class="test-pill pass">✓ 8 Edge Cases Passed</span>
+                <span class="test-pill pass">✓ Rate Limits Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card glass-card reveal-item">
+            <div class="step-number-bubble">
+              <span>03</span>
+            </div>
+            <div class="step-content">
+              <div class="step-meta">EXECUTION</div>
+              <h3 class="step-title">Deploy & Scale Globally</h3>
+              <p class="step-desc">
+                Publish instantly to serverless edge workers distributed across 35 regions. Handle millions of concurrent webhook events with sub-millisecond cold starts.
+              </p>
+              <div class="step-code-preview">
+                <span class="edge-status">● Deployed to 35 Edge Regions</span>
+                <span class="latency-status">P99 Latency: 18ms</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. PRICING SECTION -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">PREDICTABLE PRICING</span>
+          <h2 class="section-title">Transparent plans for teams of all sizes.</h2>
+          <p class="section-desc">
+            No surprise overage fees. Start completely free, upgrade when your automated pipelines scale.
+          </p>
+
+          <!-- Billing Period Toggle -->
+          <div class="billing-toggle-wrapper">
+            <span class="billing-label monthly active">Monthly</span>
+            <button class="toggle-switch" id="billingToggle" role="switch" aria-checked="false" aria-label="Toggle annual billing">
+              <span class="toggle-knob"></span>
+            </button>
+            <span class="billing-label annual">
+              Annual Billing
+              <span class="discount-badge">SAVE 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- Tier 1: Free -->
+          <div class="pricing-card glass-card reveal-item">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Free Starter</h3>
+              <p class="plan-tagline">Ideal for individuals, tinkerers, and exploratory automation.</p>
+              <div class="plan-price-wrapper">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="0" data-annual="0">0</span>
+                <span class="price-period">/ month</span>
+              </div>
+            </div>
+            
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#22c55e" stroke-width="2"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span><strong>1,000</strong> workflow runs / mo</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#22c55e" stroke-width="2"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>Up to 3 active English pipelines</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#22c55e" stroke-width="2"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>50+ Core integrations (Slack, Stripe, etc.)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#22c55e" stroke-width="2"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>Community Discord support</span>
+              </li>
+              <li class="disabled">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#6b7280" stroke-width="2"><line x1="15" y1="5" x2="5" y2="15"></line></svg>
+                <span>Autonomous self-healing retries</span>
+              </li>
+            </ul>
+
+            <a href="#cta-banner" class="btn btn-glass btn-block">Get Started Free</a>
+          </div>
+
+          <!-- Tier 2: Pro (HIGHLIGHTED) -->
+          <div class="pricing-card glass-card popular-card reveal-item">
+            <div class="popular-ribbon">MOST POPULAR</div>
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Pro Team</h3>
+              <p class="plan-tagline">For fast-moving startups and high-growth engineering teams.</p>
+              <div class="plan-price-wrapper">
+                <span class="currency">$</span>
+                <span class="price-val" data-monthly="29" data-annual="24">29</span>
+                <span class="price-period">/ month</span>
+              </div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span><strong>50,000</strong> workflow runs / mo</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>Unlimited active pipelines</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>All 300+ enterprise connectors</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>Self-healing pipeline recovery</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>Human-in-the-loop Slack approvals</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#a855f7" stroke-width="2.5"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>Priority 1-hour engineering SLA</span>
+              </li>
+            </ul>
+
+            <a href="#cta-banner" class="btn btn-primary glow-btn btn-block">
+              <span>Start 14-Day Free Trial</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+
+          <!-- Tier 3: Enterprise -->
+          <div class="pricing-card glass-card reveal-item">
+            <div class="pricing-card-header">
+              <h3 class="plan-name">Enterprise</h3>
+              <p class="plan-tagline">Custom security, volume concurrency, and VPC tenancy.</p>
+              <div class="plan-price-wrapper">
+                <span class="price-val custom-price">Custom</span>
+              </div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#38bdf8" stroke-width="2"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span><strong>Unlimited</strong> runs & executions</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#38bdf8" stroke-width="2"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>Dedicated isolated edge cluster</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#38bdf8" stroke-width="2"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>SAML 2.0 / Okta / Azure AD SSO</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#38bdf8" stroke-width="2"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>HIPAA BAA & Custom SOC2 Reports</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#38bdf8" stroke-width="2"><polyline points="16 5 8 13 4 9"></polyline></svg>
+                <span>Dedicated Technical Account Manager</span>
+              </li>
+            </ul>
+
+            <a href="#cta-banner" class="btn btn-glass btn-block">Contact Enterprise Sales</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">LOVED BY BUILDERS</span>
+          <h2 class="section-title">Why high-velocity teams choose FlowMind.</h2>
+          <p class="section-desc">
+            Over 25,000 hours saved across modern engineering and ops departments this month.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card glass-card reveal-item">
+            <div class="stars-row">★★★★★</div>
+            <p class="quote-text">
+              "FlowMind cut our Zapier bill by 75% while letting non-technical product managers build production-grade workflows in minutes. We shipped our entire billing automation in half a day."
+            </p>
+            <div class="author-info">
+              <div class="author-avatar avatar-1">SL</div>
+              <div class="author-meta">
+                <h4 class="author-name">Sarah Lin</h4>
+                <p class="author-title">VP of Engineering at ScaleForge</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card glass-card reveal-item">
+            <div class="stars-row">★★★★★</div>
+            <p class="quote-text">
+              "The self-healing pipelines alone saved us from three critical midnight outages during Black Friday. It literally rewrote a partner API payload schema on the fly and kept orders processing smoothly."
+            </p>
+            <div class="author-info">
+              <div class="author-avatar avatar-2">MV</div>
+              <div class="author-meta">
+                <h4 class="author-name">Marcus Vance</h4>
+                <p class="author-title">CTO at Hyperion Data</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card glass-card reveal-item">
+            <div class="stars-row">★★★★★</div>
+            <p class="quote-text">
+              "Writing pipelines in plain English felt like science fiction until we tested it. We automated user KYC verification, fraud detection, and CRM sync without writing a single line of Python glue."
+            </p>
+            <div class="author-info">
+              <div class="author-avatar avatar-3">ER</div>
+              <div class="author-meta">
+                <h4 class="author-name">Elena Rostova</h4>
+                <p class="author-title">Head of Growth at Velox Labs</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. CTA BANNER SECTION -->
+    <section class="cta-banner-section" id="cta-banner">
+      <div class="container">
+        
+        <div class="cta-card glass-card reveal-item">
+          <div class="cta-glow-backdrop"></div>
+          
+          <div class="cta-content">
+            <span class="cta-subtag">READY TO TRANSFORM YOUR OPERATIONS?</span>
+            <h2 class="cta-title">Start automating today with FlowMind AI.</h2>
+            <p class="cta-desc">
+              Join over 2,500 innovative engineering organizations. Spin up your first autonomous workflow in under two minutes.
+            </p>
+
+            <form class="cta-signup-form" id="earlyAccessForm">
+              <div class="input-glow-group">
+                <input type="email" class="cta-email-input" id="userEmail" placeholder="Enter your work email address..." required>
+                <button type="submit" class="btn btn-primary glow-btn cta-submit-btn">
+                  <span>Get Early Access</span>
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="form-feedback" id="formFeedback"></div>
+            </form>
+
+            <div class="cta-perks">
+              <span>⚡ Free 14-day trial</span>
+              <span>🔒 SOC2 Type II Certified</span>
+              <span>🚀 No credit card required</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top-row">
+        
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo footer-logo">
+            <div class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="url(#footer-logo-grad)"/>
+                <path d="M10 16C10 12.6863 12.6863 10 16 10C19.3137 10 22 12.6863 22 16C22 19.3137 19.3137 22 16 22" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="16" cy="16" r="3" fill="#a855f7"/>
+                <defs>
+                  <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="32" y2="32">
+                    <stop stop-color="#7c3aed"/>
+                    <stop offset="1" stop-color="#3b82f6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="logo-text">Flow<span class="gradient-text">Mind</span></span>
+          </a>
+          <p class="footer-tagline">
+            The autonomous English-to-pipeline automation platform for engineering and product teams.
+          </p>
+          <div class="system-status-pill">
+            <span class="status-indicator"></span>
+            <span>All Systems Operational (99.99%)</span>
+          </div>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4 class="col-title">Product</h4>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#mock-browser">Interactive Canvas</a>
+            <a href="#">Integrations Directory</a>
+            <a href="#">Enterprise SLA</a>
+          </div>
+
+          <div class="footer-col" id="docs">
+            <h4 class="col-title">Resources & Docs</h4>
+            <a href="#docs">Documentation</a>
+            <a href="#">API Reference</a>
+            <a href="#">CLI & SDKs</a>
+            <a href="#">GitHub Action</a>
+            <a href="#">Community Templates</a>
+            <a href="#">Architecture Whitepaper</a>
+          </div>
+
+          <div class="footer-col" id="blog">
+            <h4 class="col-title">Company</h4>
+            <a href="#blog">Blog</a>
+            <a href="#">About Us</a>
+            <a href="#">Customer Stories</a>
+            <a href="#">Careers <span class="hiring-badge">We're hiring</span></a>
+            <a href="#">Security & Trust</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="col-title">Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Security Disclosures</a>
+            <a href="#">GDPR & DPA</a>
+            <a href="#">Cookie Preferences</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; 2026 FlowMind AI, Inc. All rights reserved. Crafted for the modern autonomous web.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub" class="social-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="#" aria-label="X / Twitter" class="social-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="social-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
